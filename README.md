@@ -25,3 +25,5 @@ docker run -d --name centos7 --privileged=true centos:latest /usr/sbin/init
 docker run -d --name centos（容器名称） --privileged=true centos:latest（映像名称） /usr/sbin/init
 
 4.重启面板命令，终端机运行：/etc/init.d/bt start
+
+5.安装完毕后如果没记下登入地址和账号密码，可以在容器终端机执行命令获取：/etc/init.d/bt default
