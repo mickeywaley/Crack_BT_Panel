@@ -10,3 +10,18 @@
 
 ## 使用方法
 <code>wget -O crack_bt_panel_pro.sh https://git.io/fprzD && bash crack_bt_panel_pro.sh</code>
+
+
+=====================================
+
+注意：
+
+1.若出现无wget，则终端机运行：yum -y install wget
+
+2.运行docker时需要通过命令启动：
+docker run -d --name centos7 --privileged=true centos:latest /usr/sbin/init
+
+3.安装宝塔后，重启容器，宝塔所有服务无法自动运行，运行docker时需要通过SSH命令启动：
+docker run -d --name centos（容器名称） --privileged=true centos:latest（映像名称） /usr/sbin/init
+
+4.重启面板命令，终端机运行：/etc/init.d/bt start
